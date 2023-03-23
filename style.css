@@ -1,0 +1,183 @@
+.body
+{
+    background-image: url("C:/Users/PRITISH/Downloads/pexels-quang-nguyen-vinh-14036071.jpg");
+    background-size: cover;
+}
+
+.card
+{
+    top: 25%;
+
+    min-height: 52%;
+    max-height: fit-content;
+    min-width: fit-content;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 4rem;
+    padding: 0.75%;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
+.card-div1
+{
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    border: black;
+}
+
+.card-div2
+{
+    display: flex;
+    text-align: center;
+    padding-right: 1%;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    text-align: left;
+    font-size: 1.4rem;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-left: 3px solid white;
+    padding-left: 12px;
+}
+
+.btn::hover
+{
+  cursor: pointer;
+}
+
+.icon
+{
+    max-width: 4rem;
+}
+
+.description
+{
+    text-transform: capitalize;
+}
+.search-bar
+{
+    background: rgba(246, 248, 246, 0.5);
+    color: black;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+.weather
+{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.22rem;
+
+}
+.temp
+{
+    font-size: 1.9rem;
+}
+.search
+{
+    column-gap: 4px;
+}
+.search-bar
+{
+    padding:2%;
+    min-width:18rem;
+    border-radius: 0.3rem;
+
+}
+@media (width<700px) 
+{
+    .body
+    {
+        background-image: url("C:/Users/PRITISH/Downloads/pexels-luis-del-río-15286.jpg");
+        background-repeat: none;
+        background-size: auto;
+    }
+    .card{
+        
+        flex-direction: column;
+        row-gap: 2rem;
+        /*padding: 2%;*/
+        width: 35%;
+        min-width: fit-content;
+        min-height: 35%;
+        /*position: absolute;*/
+        position: absolute;
+        top: 7.5%;
+        
+        padding-top: 6%;
+        padding-bottom: 6%;
+        padding-left: 3%;
+        padding-right: 3%;
+        justify-content: space-around;
+        
+    }
+    .weather{
+        padding: 5%;
+        padding-left: 3.5%;
+    }
+    .card-div1
+    {
+        padding-left: 1%;
+        padding-bottom: 2%;
+    }
+    .card-div2
+    {
+        font-size: 1.2rem;
+    }
+    .weather
+    {
+        width: 100%;
+    }
+    .search{
+        width: 55%;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .btn
+    {
+        max-width: fit-content;
+    }
+}
+
+.weather.loading
+{
+    visibility: hidden;
+}
+
+.weather.weather.loading::after
+{
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+}
+
+@media only screen and (min-width: 982px) and (max-width: 1280px) {
+    .card{
+        width: 65%;
+    }
+	
+}
+
+
+@media only screen and (min-width: 740px) and (max-width: 982px) {
+    .body
+    {
+        background-size: auto;
+    }
+    .card{
+        width: 80%;
+        height: fit-content;
+        column-gap: 2rem;
+    }
+    .card-div2
+    {
+        min-width: 13rem;
+    }
+	
+}
